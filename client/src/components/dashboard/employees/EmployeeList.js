@@ -8,7 +8,8 @@ const EmployeeList = ({ allEmploy, setEmployChange }) => {
 
   async function deleteEmploy(id) {
     try {
-      await fetch(`http://localhost:5000/dashboard/employees/${id}`, {
+      await fetch(`/dashboard/employees/${id}`, {
+        // port 5000
         method: "DELETE",
         headers: { token: localStorage.token },
       });

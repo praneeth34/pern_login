@@ -16,7 +16,8 @@ const Login = ({ setAuth }) => {
     e.preventDefault();
     try {
       const body = { email, password };
-      const response = await fetch("http://localhost:5000/auth/login", {
+      const response = await fetch("/auth/login", {
+        // 5000 port
         method: "POST",
         headers: {
           "Content-type": "application/json",

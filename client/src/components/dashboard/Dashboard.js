@@ -8,7 +8,8 @@ const Dashboard = ({ setAuth }) => {
 
   const getProfile = async () => {
     try {
-      const res = await fetch("http://localhost:5000/dashboard/", {
+      const res = await fetch("/dashboard/", {
+        // port 5000
         method: "GET",
         headers: { token: localStorage.token },
       });

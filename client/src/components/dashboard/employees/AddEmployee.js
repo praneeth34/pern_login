@@ -17,7 +17,7 @@ const AddEmployee = ({ setEmployChange }) => {
 
       const body = { employ_name, gender, designation, city };
       const response = await fetch(
-        "http://localhost:5000/dashboard/employees",
+        "/dashboard/employees", //port 5000
         {
           method: "POST",
           headers: myHeaders,
