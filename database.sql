@@ -19,7 +19,7 @@ CREATE TABLE employees(
 
 -- fake users
 
-insert into users (user_name, user_email, user_password) values ('alexcia', 'girl@gmail.com', 'secret');
+insert into users (user_name, user_email, user_password) values ('goku', 'goku@gmail.com', '123');
 
 -- fake employees
 
